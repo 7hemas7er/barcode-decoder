@@ -6,9 +6,9 @@ zxing-cpp==3.1.1 \
     --hash=sha256:f4dae01111f323f46736fc21f05c14dcaaac06cea5fdc8fd994ba19f6f918c6e \
     --hash=sha256:9cf67341949946307d086b302cefd453fb47bc6d6ddc7d088839e9481982757b
 # Pillow: opens JPEG, PNG and WebP (MIT-CMU; the bundled libraries are listed in THIRD_PARTY.md).
-pillow==12.3.0 \
-    --hash=sha256:f7401aebd7f581d7f83a439d87d474999317ee099218e5ad25d125290990ba65 \
-    --hash=sha256:0847a763afefb695bc912d7c131e7e0632d4edc1d8698f58ddabec8e46b8b6d3
+pillow==13.0.0 \
+    --hash=sha256:5f56499c1a74d2b862beb0c33b8016f99d095858455df9d21583bbbc1c15b582 \
+    --hash=sha256:19b66ca0a4d25cc0200b381ce824c7ea090db61427315e73cfb05dbf1b35c369
 # pi-heif: HEIF/HEIC for Pillow, DECODE ONLY (BSD-3-Clause; bundles libheif and libde265, LGPL-3.0, and no
 # encoder). Not pillow-heif: its wheels bundle the x265 encoder, which is GPL-2.0.
 pi-heif==1.4.0 \
