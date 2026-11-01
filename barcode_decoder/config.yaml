@@ -1,0 +1,20 @@
+name: Barcode Decoder
+version: "1.0.0"
+slug: barcode_decoder
+description: Legge i codici a barre di foto e PDF (nessun dato salvato)
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: auto
+# Docker's init is PID 1: it forwards the stop signal and reaps the job processes (this base image has no S6)
+init: true
+# /tmp is a tmpfs: the only place the decoder writes (one folder per job, removed at its end)
+tmpfs: true
+# No host port: Home Assistant reaches the app on the internal network (http://local-barcode-decoder:8099 for a
+# local app, http://<repository hash>-barcode-decoder:8099 when installed from a repository)
+ports:
+  8099/tcp: null
+ports_description:
+  8099/tcp: API per Home Assistant (non serve aprirla)
+watchdog: "http://[HOST]:[PORT:8099]/health"

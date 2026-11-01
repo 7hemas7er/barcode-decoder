@@ -1,0 +1,11 @@
+# Only for make_fixtures.py, in a throwaway container: NEVER in the decoder image.
+# pillow-heif's wheels bundle the x265 HEVC encoder (GPL-2.0), needed to write the HEIC fixtures.
+pillow-heif==1.8.1 \
+    --hash=sha256:1ac80def387aaee029733c4292bab551b397128da5abd889fe13c0626a1cc1ce \
+    --hash=sha256:cf1f60ee05d1280f98c00a052829963e57790dce0ca8203828658b14f8c0cf7b
+pillow==12.3.0 \
+    --hash=sha256:f7401aebd7f581d7f83a439d87d474999317ee099218e5ad25d125290990ba65 \
+    --hash=sha256:0847a763afefb695bc912d7c131e7e0632d4edc1d8698f58ddabec8e46b8b6d3
+zxing-cpp==3.1.1 \
+    --hash=sha256:f4dae01111f323f46736fc21f05c14dcaaac06cea5fdc8fd994ba19f6f918c6e \
+    --hash=sha256:9cf67341949946307d086b302cefd453fb47bc6d6ddc7d088839e9481982757b

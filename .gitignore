@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.venv/
+
+# Never commit real documents: the tests use only the fictional fixtures in tests/fixtures
+*.pkpass
+*.jpg
+*.jpeg
+*.pdf
+data/
+
+# Editors, assistants and OS
+.claude/
+.vscode/
+.idea/
+*.swp
+.DS_Store

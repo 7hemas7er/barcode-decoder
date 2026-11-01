@@ -1,0 +1,7 @@
+**/__pycache__
+**/*.pyc
+*.md
+icon.png
+logo.png
+config.yaml
+.dockerignore

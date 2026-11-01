@@ -1,0 +1,16 @@
+# Installed with: pip install --only-binary=:all: --require-hashes --no-deps -r requirements.txt
+# Wheels only, CPython 3.13, manylinux_2_28 (glibc), for aarch64 and x86_64. The licences are in THIRD_PARTY.md.
+#
+# zxing-cpp: the barcode reader (Apache-2.0). No musllinux wheels: hence the Debian base image.
+zxing-cpp==3.1.1 \
+    --hash=sha256:f4dae01111f323f46736fc21f05c14dcaaac06cea5fdc8fd994ba19f6f918c6e \
+    --hash=sha256:9cf67341949946307d086b302cefd453fb47bc6d6ddc7d088839e9481982757b
+# Pillow: opens JPEG, PNG and WebP (MIT-CMU; the bundled libraries are listed in THIRD_PARTY.md).
+pillow==12.3.0 \
+    --hash=sha256:f7401aebd7f581d7f83a439d87d474999317ee099218e5ad25d125290990ba65 \
+    --hash=sha256:0847a763afefb695bc912d7c131e7e0632d4edc1d8698f58ddabec8e46b8b6d3
+# pi-heif: HEIF/HEIC for Pillow, DECODE ONLY (BSD-3-Clause; bundles libheif and libde265, LGPL-3.0, and no
+# encoder). Not pillow-heif: its wheels bundle the x265 encoder, which is GPL-2.0.
+pi-heif==1.4.0 \
+    --hash=sha256:0cd041cdf552019737f665fdcdf9c831ef354785a92d930d7f546ba9959a0284 \
+    --hash=sha256:2fd498fabcdc77159414cccfd966ca48735497fd8c038d1b0135025f3cceac90

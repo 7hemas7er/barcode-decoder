@@ -1,0 +1,4 @@
+#!/bin/sh
+# A pdftoppm that never finishes (T-D7): exec, so a kill reaches sleep itself. -v answers the server's probe.
+[ "${1:-}" = "-v" ] && { echo "pdftoppm version 0.0 (fake)" >&2; exit 0; }
+exec sleep 30

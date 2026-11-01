@@ -1,0 +1,6 @@
+#!/bin/sh
+# A pdftoppm that leaves a background child behind and never finishes (T-D7): the job's whole process group must
+# be killed. -v answers the server's probe.
+[ "${1:-}" = "-v" ] && { echo "pdftoppm version 0.0 (fake)" >&2; exit 0; }
+sleep 31 &
+exec sleep 30

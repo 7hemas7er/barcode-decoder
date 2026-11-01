@@ -1,0 +1,5 @@
+#!/bin/sh
+# A pdftoppm that takes 1 s and renders nothing (T-D8): each job holds the worker for about a second.
+[ "${1:-}" = "-v" ] && { echo "pdftoppm version 0.0 (fake)" >&2; exit 0; }
+sleep 1
+exit 0
